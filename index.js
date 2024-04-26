@@ -16,7 +16,7 @@ http.createServer((req, res) => {
     else if (req.url=='/api'){
         async function main(){
                        
-            const uri ="mongodb+srv://illurugovardhanreddy:UnhBadminton123@cluster0.gjd9arz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+            const uri ="mongodb+srv://Hema:Hema123@hema.boswlky.mongodb.net/?retryWrites=true&w=majority&appName=hema";
             const client = new MongoClient(uri); 
             try {
                 // Connect to the MongoDB cluster
@@ -45,7 +45,7 @@ http.createServer((req, res) => {
 
 async function findsomedata(client ){
     console.log("IIII")
-    const cursor = client.db("sampledb").collection("sample").find({});
+    const cursor = client.db("gotbooksdatabase").collection("got").find({});
     const results = await cursor.toArray();
     console.log(results);
     const js= (JSON.stringify(results));
