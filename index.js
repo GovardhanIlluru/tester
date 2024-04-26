@@ -16,7 +16,7 @@ http.createServer((req, res) => {
     else if (req.url=='/api'){
         async function main(){
                        
-            const uri ="mongodb+srv://illurugovardhanreddy:<password>@cluster0.gjd9arz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+            const uri ="mongodb+srv://illurugovardhanreddy:Ap26ae3726@234@cluster0.gjd9arz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
             const client = new MongoClient(uri); 
             try {
                 // Connect to the MongoDB cluster
@@ -41,7 +41,7 @@ http.createServer((req, res) => {
         main().catch(console.error);
  
     } 
-}).listen(4970,()=>console.log("Server is running"));
+}).listen(process.env.PORT,()=>console.log("Server is running"));
 
 async function findsomedata(client ){
     console.log("IIII")
