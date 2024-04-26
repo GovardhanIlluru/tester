@@ -1,0 +1,628 @@
+<index2 class="html"></index2>
+
+
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+        
+        <title> Portfolio Website Hemalatha Sadineni </title>
+        <style>
+            body {
+                font-family:Arial;
+                background-color: aquamarine;
+                margin:0;
+                padding:0;
+                
+            }
+
+            .container {
+                display:grid;
+                grid-template-rows: 0.2fr 0.6fr 0.6fr 0.6fr 0.6fr 0,6fr 0.2fr;
+                grid-template-areas:
+                    "nav"
+                    "main"
+                    "footer";
+                    min-height:100vh;
+             
+
+            }
+
+
+            
+            
+                
+            
+
+            nav {
+                grid-area: nav;
+                background-color:coral;
+                padding: 20px;
+                text-align:right ;
+            }
+
+            main{
+                 grid-area: main ;
+                 background-color:pink;
+                color:green;
+                padding:40px;
+                text-align: center;
+                margin: 0%;
+                
+                
+    
+
+}
+
+#about {
+    background-color:darkgreen;
+    color: black;
+    padding:40px;
+
+}
+
+
+
+
+#education {
+    background-color:hotpink;
+    color:grey;
+    padding:40px;
+}
+
+#blogs {
+    background-color: orange;
+    color:white;
+    padding:30px;
+}
+
+#projects {
+    background-color: palegreen;
+    padding :50px;
+    display : inline-block;
+    text-align: center;
+    gap: 20px;
+}
+.project img {
+    width:100%;
+
+}
+
+
+
+
+
+
+            
+            
+            footer {
+                background-color:green;
+                color:black;
+                text-align: center;
+                padding:20px;
+            }
+
+            @media only screen and (max-width:80px){
+                .container {
+                    grid-template-columns: 1fr;
+                grid-template-rows: 0.2fr 1.3fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: "nav" "main" "about" "education" "blogs" "projects";
+                }
+            }
+        </style>
+        </head>
+
+        <body> 
+            <div class="container">
+            <header>
+                
+                <nav >
+                <div class="topnav" id="mytopnav">
+                 
+                    <a class ="active"
+                    href="#home">Home</a>
+                    <a  href="#About">About</a>
+                    <a  href="#Education">Education</a>
+                    <a  href="#Blogs">Blogs</a>
+                    <a  href="#projects">projects</a>
+                    <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="myfunction()">
+                    <i class="fa 
+                    fa-bars"></i>
+                    </a>
+=======
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>body {
+        font-family: 'Arvo', serif;
+        color: #111;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    body {
+        font-family: 'Arvo', serif;
+        color: #111;
+    }
+    
+    #navgrid {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ff9100;
+        padding: 15px 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        color: #e5e5e5;
+        margin: 0 15px;
+        cursor: pointer;
+        transition: color 0.3s;
+        align-items: center;
+        padding: 0;
+        flex-wrap: wrap;
+        margin: 15px 0;
+    }
+    
+    .menu a {
+        font-size: 1rem;
+        color: #222;
+        font-weight: 500;
+        text-decoration: none;
+        margin: 0 10px;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    
+    }
+    
+    .flexabout {
+        display: flex;
+        align-items: stretch;
+    }
+    
+    .menu a:hover {
+        background-color: #eee;
+        color: #2C3E50;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: px;
+        margin-bottom: 20px;
+        margin-left: 10;
+        text-align: left;
+        border-bottom: 2px solid deepskyblue;
+        padding-bottom: 10px;
+        color: #2C3E50;
+    
+    }
+    
+    .skillsheading {
+        margin-top: -30px;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    .headerbox,
+    section,
+    body {
+        background-color: #f6f1d1;
+    }
+    
+    
+    .halfDiv {
+        width: 45%;
+    
+    }
+    
+    .halfDivabout {
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+    
+    .image {
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .myimage {
+        height: 100px;
+        width: 100px;
+    
+    }
+    
+    
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    section {
+        margin: 20px;
+    
+    }
+    
+    .navDiv {
+        font-size: medium;
+        color: #ecf0f1;
+        font-size: 1.5em;
+        margin: 0;
+        color: #333;
+        font-weight: bold;
+        padding: 15px 0;
+        letter-spacing: 1.5px;
+        font-family: "DM Sans", sans-serif;
+        border-bottom: 2px solid #ccc;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .headerbox {
+        margin: auto;
+        padding: 10px;
+    
+    }
+    
+    .box {
+        margin: auto;
+        height: 450px;
+        padding: 10px;
+    
+    }
+    
+    .imagecontainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .content {
+        padding: 10px;
+    
+        margin: auto;
+    }
+    
+    .center {
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .bold-text {
+        font-weight: bold;
+    }
+    
+    .textcenter {
+        text-align: center;
+    }
+    
+    .centered-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+    
+        text-align: center;
+    }
+    
+    .centered-list li {
+        text-align: center;
+    }
+    
+    .fontitalic {
+        font-style: italic;
+    }
+    
+    .label {
+        font-weight: bold;
+    }
+    
+    .value {
+        font-style: italic;
+    }
+    
+    .centered-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        max-width: 70%;
+    }
+    
+    .sectionclass {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        flex-direction: column;
+    }
+    
+    .contact-item {
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+    
+    
+    .contactbox {
+        margin: auto;
+        height: 450px;
+        padding: 10px;
+        /* width: max-content; */
+    
+    }
+    
+    .contact-item {
+        margin-bottom: 10px;
+        font-size: 1rem;
+    
+    
+    }
+    
+    .contact-icon {
+        width: 50px;
+        height: 60px;
+        display: block;
+        padding: 2px;
+    
+    }
+    
+    .contact-link {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+    
+    }
+    
+    .block {
+        display: block;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "navgrid navgrid "
+            "aboutgrid  skillsgrid"
+            "experiecegrid experiecegrid"
+            "projetctsgrid projetctsgrid"
+            "educationgrid educationgrid"
+            "contactgrid blogsgrid";
+     
+    }
+    
+    #navgrid {
+        grid-area: navgrid;
+    }
+    
+    #aboutgrid {
+        grid-area: aboutgrid;
+    }
+    
+    #skillsgrid {
+        grid-area: skillsgrid;
+    }
+    
+    #experiecegrid {
+        grid-area: experiecegrid;
+    }
+    
+    #projetctsgrid {
+        grid-area: projetctsgrid;
+    }
+    
+    #educationgrid {
+        grid-area: educationgrid;
+    }
+    
+    #contactgrid {
+        grid-area: contactgrid;
+    }
+    
+    #blogsgrid {
+        grid-area: blogsgrid;
+    }
+    
+    
+    /* mobile layout */
+    @media only screen and (max-width:500px) {
+        .container {
+            display: grid;
+            height: auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 2.2fr 2.2fr 2.2fr 2.2fr 2.2fr 2.2fr 2.2fr;
+            grid-template-areas:
+                "navgrid"
+                "aboutgrid"
+                "skillsgrid"
+                "experiecegrid"
+                "projetctsgrid"
+                "educationgrid"
+                "contactgrid"
+                "blogsgrid";
+    
+        }
+    
+    }</style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="navDiv flex" id="navgrid">
+            <div class=" ">
+                <p>Govardhan Reddy Illuru</p>
+            </div>
+            <div class="menu halfDiv ">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experiecegrid">Experience</a>
+                <a href="#projetctsgrid">Projects</a>
+                <a href="#educationgrid">Education</a>
+                <a href="#contactgrid">Contact</a>
+                <a href="#blogsgrid">Blogs</a>
+            </div>
+        </div>
+        <div class="About" id="aboutgrid"> 
+            <div class=" " id="about">
+                <h2>About</h2>
+                <div class="image">
+                    <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7914927/man-icon-md.png" alt="" class="myimage " />
+>>>>>>> fb66202b2ce565103d8fe738d0a70567ff5d4c24
+                </div>
+                </nav>
+            
+            
+            </header>
+
+            <main id="Home">
+            
+                 <h2>Home </h2>
+                 <img src = "https://www.mycarpaltunnel.com/wp-content/uploads/2016/02/Woman-India-software-engineer-carpal-tunnel-working-on-computer.png" width="100%">
+                 <p>              
+                     HEMALATHA SADINENI. </p>
+                 </main>
+
+                 <section id="About" width="100%">
+                    <h2>About me </h2>
+
+                    <p>  During your career, you may need to write a document explaining your skills, abilities and qualifications.
+                         This document may be a cover letter, personal statement during the job interview process or self-appraisal for advancement opportunities. 
+                         Learning how to write about yourself accurately can increase your chances of receiving a job interview or promotion.  </p>
+
+                         <h> Skiils </h>
+                         <ul>
+                            <li>Leadership</li>
+                               <li> Teamwork skills</li>
+                               <li> Communication skills</li>
+                                <li>Problem-solving skills</li>
+                         </ul>
+                         
+
+
+                         </section>
+
+                        <section id="Education" width="100%">
+                            <h2>Education</h2>
+                            <ul>
+                                <li>Ohio State University, Columbus, OH
+
+                                    2005–2007 Completed 60 credits toward BA in Psychology
+                                    
+                                    
+                                <li>Cherryville High School, Cherryville, OH
+                                    
+                                    Graduated in 2005</li></li>
+                                <li>BA in English Literature in Progress
+
+                                    Sarah Lawrence College, Bronxville, NY</li>
+                            </ul>
+                            
+                 </section>
+                 
+                 <section id ="Blogs">
+                    
+                    <h2>Blogs </h2>
+                    <ul>
+<<<<<<< HEAD
+                        <li> I have a very good experience in web design</li>
+                        <li>THe motive of my web design is to be better</li>
+                        <li> I have a very good experience in web design</li>
+                        <li>THe motive of my web design is to be better</li>
+                        <li> I have a very good experience in web design</li>
+                        <li>THe motive of my web design is to be better</li>
+                        <li> I have a very good experience in web design</li>
+                        <li>THe motive of my web design is to be better</li>
+
+
+                    </ul> 
+
+    
+                    
+                 </section>
+
+                 <section id ="Projects "
+                    style="display: flex;">
+                    <div>
+                    <h2> projects </h2>
+                    <img src="https://th.bing.com/th?id=OIP.IZdmY8eMeazf8rvV7mEwkwHaE8&w=305&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" >
+                    
+                    <p>ATTENDENCE TRACKING BY USING CLOUD </p>
+=======
+                        <li>Efficiently retrieved, parsed, and manipulated data using API-based
+                            login and powerful libraries. Achieved remarkable 85% reduction in
+                            data retrieval time and 50% increase in processing speed, enhancing
+                            system performance significantly. </li>
+                        <li>Automated uploading I20's which saved 90% of processing time</li>
+                        
+                    </ul>
+                </div>
+                <div class="box halfDiv ">
+                    <div class="imagecontainer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/1200px-Tata_Consultancy_Services_Logo.svg.png" alt="" class="myimage" />
+>>>>>>> fb66202b2ce565103d8fe738d0a70567ff5d4c24
+                    </div>
+
+                    <div>
+
+<<<<<<< HEAD
+                    <img src="https://th.bing.com/th?id=OIP.EZeP9vSGOADD1MSdiDctcgHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2">
+                    <p>STRESS DETECTION USING MACHINE LEARNING</p>
+                    </div>
+                    <div>
+                        <img src="https://th.bing.com/th?id=OIP.5CztuplBGWWYSG9tbbktTAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2">
+                        <p>DATA MINING</p>
+                    </div>
+                    <div>
+                        <img src="https://th.bing.com/th?id=OIP.EZeP9vSGOADD1MSdiDctcgHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2">
+                        <p> APP DEVELOPMENT </p>
+                    </div>
+                    </section>
+
+                    
+
+                    <footer>
+
+                        <p> contact:hemlatha@gmail.com</p>
+
+                    </footer>
+                
+                
+
+
+                       
+
+                
+                    
+                  
+
+                
+
+
+
+                 
+                    
+                 </div>
+
+
+
+            
+
+
+        </body>
+    
+=======
+>>>>>>> fb66202b2ce565103d8fe738d0a70567ff5d4c24
+</html>
