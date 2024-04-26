@@ -16,7 +16,7 @@ http.createServer((req, res) => {
     else if (req.url=='/api'){
         async function main(){
                        
-            const uri ="mongodb+srv://illurugovardhanreddy:Lkjhgfdsa123@cluster0.gjd9arz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+            const uri ="mongodb+srv://illurugovardhanreddy:UnhBadminton1233@cluster0.gjd9arz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
             const client = new MongoClient(uri); 
             try {
                 // Connect to the MongoDB cluster
